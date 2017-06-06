@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 //将路由引入到router变量中，为了挂载到vue实例上
 import router from './router'
+import axios from 'axios'
+Vue.prototype.axios = axios
 
 //懒加载引入vue-lazyload
 import VueLazyload from 'vue-lazyload'
@@ -22,6 +24,8 @@ Vue.config.productionTip = false
 //创建一个bus用来传值
 const bus = new Vue();
 Vue.prototype.bus = bus;
+// Vue.prototype.bus1 = {name:111};
+
 
 /* eslint-disable no-new */
 new Vue({
@@ -30,3 +34,4 @@ new Vue({
   components: { App },
   router  
 })
+
