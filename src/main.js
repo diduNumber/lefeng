@@ -5,6 +5,10 @@ import App from './App'
 //将路由引入到router变量中，为了挂载到vue实例上
 import router from './router'
 
+// 引入axios进行网络请求
+import axios from 'axios'
+Vue.prototype.axios = axios
+
 //懒加载引入vue-lazyload
 import VueLazyload from 'vue-lazyload'
 //全局引入VueLazyload 
