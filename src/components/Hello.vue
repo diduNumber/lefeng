@@ -16,8 +16,11 @@ export default {
 	},
 	methods: {
 		kissBack () {
+
 			this.bus.$emit('data', this.msg);
-			history.back();
+		   console.log(this.bus1)
+
+			// history.back();
 		}
 	},
 	created () {

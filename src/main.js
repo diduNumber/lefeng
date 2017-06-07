@@ -26,6 +26,8 @@ Vue.config.productionTip = false
 //创建一个bus用来传值
 const bus = new Vue();
 Vue.prototype.bus = bus;
+// Vue.prototype.bus1 = {name:111};
+
 
 /* eslint-disable no-new */
 new Vue({
@@ -34,3 +36,4 @@ new Vue({
   components: { App },
   router  
 })
+
