@@ -20,7 +20,7 @@ export default {
 			this.bus.$emit('data', this.msg);
 		   console.log(this.bus1)
 
-			// history.back();
+			history.back();
 		}
 	},
 	created () {
